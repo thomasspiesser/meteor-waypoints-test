@@ -1,11 +1,11 @@
-var waypoint = new Waypoint({
-  element: document.getElementById('test'),
-  handler: function(direction) {
-    alert('You have scrolled to a thing');
-  }
-});
 
 if (Meteor.isClient) {
+  var waypoint = new Waypoint({
+    element: document.getElementById('test'),
+    handler: function(direction) {
+      alert('You have scrolled to a thing');
+    }
+  });
   // counter starts at 0
   Session.setDefault('counter', 0);
 
